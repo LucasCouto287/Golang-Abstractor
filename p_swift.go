@@ -65,3 +65,4 @@ func (s *OS_Swift) Get() string {
 func (s *OS_Swift) Del() string {
 	return "Swift Put Object"
 }
+//
