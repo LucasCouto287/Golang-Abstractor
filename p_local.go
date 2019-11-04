@@ -21,3 +21,24 @@ func (l *Local) ListBuckets() string {
 	}
 	return "Local List Buckets"
 }
+
+func (l *Local) CreateBucket(bucketName string) string {
+	os.MkdirAll(l.Path+"/"+bucketName, 0777)
+	return "Local Create Bucket"
+}
+
+func (l *Local) DeleteBucket(bucketName string) string {
+	return "Local Delete Bucket"
+}
+
+func (l *Local) Put(src string, dst string) string {
+	return "Local Put Object"
+}
+
+func (l *Local) Get() string {
+	return "Local Get Object"
+}
+
+func (l *Local) Del() string {
+	return "Local Put Object"
+}
